@@ -14,9 +14,9 @@ from collections import Counter
 st.set_page_config(page_title="DeepCV", page_icon="📝", layout="wide", initial_sidebar_state="expanded")
 
 # Load pre-trained models
-svc_model = pickle.load(open('models/clf.pkl', 'rb')) 
-tfidf = pickle.load(open('models/tfidf.pkl', 'rb'))  
-le = pickle.load(open('models/encoder.pkl', 'rb')) 
+svc_model = pickle.load(open('clf.pkl', 'rb')) 
+tfidf = pickle.load(open('tfidf.pkl', 'rb'))  
+le = pickle.load(open('encoder.pkl', 'rb')) 
 
 # Custom CSS for modern UI
 st.markdown("""
